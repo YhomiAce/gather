@@ -1,0 +1,34 @@
+{
+  "name": "gather",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Event pages and RSVPs for meetups",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --port 5109",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "start": "node .output/server/index.mjs",
+    "postinstall": "nuxt prepare",
+    "test": "vitest run",
+    "typecheck": "nuxt typecheck",
+    "db:generate": "drizzle-kit generate"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.4",
+    "marked": "^18.1.2",
+    "nuxt": "^4.6.3",
+    "postgres": "^3.4.9",
+    "vue": "^3.5.44",
+    "vue-router": "^5.4.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "drizzle-kit": "^0.31.11",
+    "typescript": "^6.0.3",
+    "vitest": "^5.0.5",
+    "vue-tsc": "^3.3.13"
+  }
+}
